@@ -1,0 +1,79 @@
+@mixin sectionHead {
+    @extend .primary-text ; 
+    text-align: center ; 
+    font-size: 1.5rem ; 
+    color: $headingColor;
+    margin: 20px 0 ; 
+}
+
+@mixin headParagraph {
+    @extend .secondary-text ; 
+    color: $paragraphsColor;
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+@mixin backgroundImage ($path) {
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin linearGradient ($direction, $from, $to) {
+    @each $vendor in $vendors {
+        background : #{$vendor}linear-gradient($direction, $from, $to);
+    }
+}
+
+@mixin rounded($radius: 0.5em) {
+  @each $vendor in $vendors {
+		#{$vendor}border-radius: $radius;
+	}
+}
+.primary-text {
+    font-family: $openSansFont ; 
+    font-weight: 600 ; 
+    text-transform: capitalize ; 
+}
+.secondary-text {
+    font-family: $robotoFont ;  
+    font-weight: 300 ; 
+    font-size: 1rem ; 
+}
+.btn {
+    outline: none ; 
+    border: none ; 
+    padding: 15px 40px ;
+}
+.primary-btn {
+    @include rounded ;
+    @extend .primary-text ; 
+    @extend .btn ; 
+    cursor: pointer;
+    
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+ul {
+    list-style: none ;
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.section-header {
+    @include sectionHead ; 
+}
+.section-header p {
+    @include headParagraph ; 
+}
+.text-center {
+    text-align: center;
+}
+.mx-auto {
+    margin: 0 auto;
+}
