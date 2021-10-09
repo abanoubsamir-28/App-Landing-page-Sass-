@@ -531,9 +531,9 @@ footer {
     }
 
     .container {
-        display: flex;
-        padding: 5% 0;
-
+        .footer__top {
+            display: flex;
+            padding: 5% 0;
         .products {
             width: 25%;
 
@@ -610,6 +610,32 @@ footer {
 
                     img {
                         width: 100%;
+                    }
+                }
+            }
+        }
+        }
+        .footer__text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                @include headParagraph ; 
+                margin: 0;
+            }
+            i , span {
+                color: #B049FF;
+            }
+            .footer__icons {
+                display: flex;
+                i {
+                    color: white;
+                    padding: 10% 10%;
+                    margin: 0 10%;
+                    background-color: black;
+                    cursor: pointer;
+                    &:hover {
+                        @include linearGradient(to right, $endGradientColorRGB, $startGradientColorRGB); 
                     }
                 }
             }
