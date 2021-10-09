@@ -1,9 +1,9 @@
-.primary-text, .primary-btn, .header .header__content .header__content__text button, .pricing .pricing__wrapper .item ul a, .download .container .download__buttons a, .section-header, .header .navbar .navbar__content .navbar__links li a, .header .header__content .header__content__text h1, .features .features__content .features__wrapper .item h4, .pricing .pricing__wrapper .item header .item__text h3, .pricing .pricing__wrapper .item header h2, .testimonial .testimonial__wrapper .item .item__text h4, .download .container h2, .news .news__wrapper .item h3, footer h3, footer .container .search .input button {
+.primary-text, .primary-btn, .header .header__content .header__content__text button, .pricing .pricing__wrapper .item ul a, .download .container .download__buttons a, .section-header, .header .navbar .navbar__content .navbar__links li a, .header .header__content .header__content__text h1, .features .features__content .features__wrapper .item h4, .pricing .pricing__wrapper .item header .item__text h3, .pricing .pricing__wrapper .item header h2, .testimonial .testimonial__wrapper .item .item__text h4, .download .container h2, .news .news__wrapper .item h3, footer h3, footer .container .footer__top .search .input button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-transform: capitalize; }
 
-.secondary-text, .section-header p, .header .header__content .header__content__text p, .features .features__content .features__wrapper .item p, .pricing .pricing__wrapper .item header .item__text p, .pricing .pricing__wrapper .item ul li, .testimonial .testimonial__wrapper .item .item__text p, .download .container p, .news .news__wrapper .item h6, .news .news__wrapper .item p, footer .container .products h5, footer .container .search p, footer .container .search .input input, footer .container .search .input input::placeholder {
+.secondary-text, .section-header p, .header .header__content .header__content__text p, .features .features__content .features__wrapper .item p, .pricing .pricing__wrapper .item header .item__text p, .pricing .pricing__wrapper .item ul li, .testimonial .testimonial__wrapper .item .item__text p, .download .container p, .news .news__wrapper .item h6, .news .news__wrapper .item p, footer .container .footer__top .products h5, footer .container .footer__top .search p, footer .container .footer__top .search .input input, footer .container .footer__top .search .input input::placeholder, footer .container .footer__text p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem; }
@@ -486,27 +486,27 @@ footer {
     color: white;
     text-align: left;
     text-transform: uppercase; }
-  footer .container {
+  footer .container .footer__top {
     display: flex;
     padding: 5% 0; }
-    footer .container .products {
+    footer .container .footer__top .products {
       width: 25%; }
-      footer .container .products h5 {
+      footer .container .footer__top .products h5 {
         color: white;
         margin: 5% 0; }
-    footer .container .search {
+    footer .container .footer__top .search {
       width: 50%;
       position: relative; }
-      footer .container .search p {
+      footer .container .footer__top .search p {
         color: #777777;
         width: 75%;
         margin: 0 auto;
         padding: 20px 0;
         width: 100%;
         font-weight: 600; }
-      footer .container .search .input {
+      footer .container .footer__top .search .input {
         margin: 5% 0; }
-        footer .container .search .input input {
+        footer .container .footer__top .search .input input {
           color: #777777;
           width: 75%;
           margin: 0 auto;
@@ -520,9 +520,9 @@ footer {
           -o-border-radius: 1rem;
           -ms-border-radius: 1rem;
           border-radius: 1rem; }
-        footer .container .search .input input:focus {
+        footer .container .footer__top .search .input input:focus {
           outline: none; }
-        footer .container .search .input input::placeholder {
+        footer .container .footer__top .search .input input::placeholder {
           color: #777777;
           width: 75%;
           margin: 0 auto;
@@ -530,7 +530,7 @@ footer {
           font-weight: 400;
           text-align: left;
           padding: 5%; }
-        footer .container .search .input button {
+        footer .container .footer__top .search .input button {
           display: inline;
           font-weight: 400;
           padding: 2.5% 5%;
@@ -551,13 +551,39 @@ footer {
           outline: none;
           position: absolute;
           right: 15%; }
-    footer .container .feed {
+    footer .container .footer__top .feed {
       width: 25%; }
-      footer .container .feed .instgram {
+      footer .container .footer__top .feed .instgram {
         display: flex;
         flex-wrap: wrap;
         align-content: center; }
-        footer .container .feed .instgram figure {
+        footer .container .footer__top .feed .instgram figure {
           width: 25%; }
-          footer .container .feed .instgram figure img {
+          footer .container .footer__top .feed .instgram figure img {
             width: 100%; }
+  footer .container .footer__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .container .footer__text p {
+      color: #777777;
+      width: 75%;
+      margin: 0 auto;
+      padding: 20px 0;
+      margin: 0; }
+    footer .container .footer__text i, footer .container .footer__text span {
+      color: #B049FF; }
+    footer .container .footer__text .footer__icons {
+      display: flex; }
+      footer .container .footer__text .footer__icons i {
+        color: white;
+        padding: 10% 10%;
+        margin: 0 10%;
+        background-color: black;
+        cursor: pointer; }
+        footer .container .footer__text .footer__icons i:hover {
+          background: -moz-linear-gradient(to right, #9b38fe, #b049ff);
+          background: -webkitlinear-gradient(to right, #9b38fe, #b049ff);
+          background: -o-linear-gradient(to right, #9b38fe, #b049ff);
+          background: -ms-linear-gradient(to right, #9b38fe, #b049ff);
+          background: linear-gradient(to right, #9b38fe, #b049ff); }
